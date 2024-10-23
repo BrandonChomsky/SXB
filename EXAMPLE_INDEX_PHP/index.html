@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOMSKY</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #111, #222);
+            color: #eee;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #00ff00;
+            text-shadow: 0 0 15px #00ff00;
+            margin: 20px 0;
+            animation: blinkAnimation 1s infinite;
+        }
+
+        @keyframes blinkAnimation {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        b {
+            color: #4131d1;
+            font-size: 1.5em;
+            text-shadow: 0 0 15px #ff00ff;
+            display: inline-block;
+            animation: slideAnimation 3s infinite;
+        }
+
+        @keyframes slideAnimation {
+            0% { transform: translateX(-10px); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(-10px); }
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            margin: 20px 0;
+            animation: colorChange 4s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { background: #ffcc00; }
+            50% { background: #ff6600; }
+            100% { background: #ffcc00; }
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #00ffff;
+            box-shadow: 0 0 15px #00ffff;
+            transition: transform 0.3s ease-in-out;
+            margin: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            padding: 20px;
+            justify-items: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #eee;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+
+        /* Sticky menu */
+        nav {
+            background-color: #222;
+            padding: 10px;
+            border-radius: 5px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            width: 100%;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff00ff;
+        }
+
+        .about-section {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+            padding: 20px;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        .audio-container {
+            margin: 20px;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 5px;
+        }
+
+        /* Estilos Responsivos */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            b {
+                font-size: 1.2em;
+            }
+
+            .about-section {
+                padding: 10px;
+            }
+
+            footer {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <h1>TWENTY ONE PILOTS</h1>
+    <hr />
+    <b>Hello, this is my first page, thank you for visiting me.</b> 
+    <br />
+    <hr />
+    
+    <h2 id="about">About Section</h2>
+    <div class="about-section">
+        <h3>ACERCA DE</h3>
+        <p>
+            Twenty One Pilots es una banda estadounidense formada en 2009 en Columbus, Ohio, por el vocalista y multiinstrumentista Tyler Joseph, junto a los exintegrantes
+            Nick Thomas y Chris Salih, quienes dejaron el grupo en 2011. Desde entonces, la formación principal ha consistido en Tyler Joseph y el baterista Josh Dun.
+        </p>
+        <h3>EL ESTILO</h3>
+        <p>
+            La estética visual de Twenty One Pilots es un aspecto crucial de su identidad. En el álbum Blurryface, Tyler solía pintarse el cuello y las manos de negro, simbolizando las inseguridades. Además,
+            ambos miembros del dúo son conocidos por usar ropa y máscaras distintivas que cambian según la narrativa de cada álbum.
+        </p>
+        <h3>POPULARIDAD</h3>
+        <p>
+            Con sus letras auténticas y su sonido innovador, Twenty One Pilots ha cultivado una base de fans leal conocida como el “Skeleton Clique”. Han ganado varios premios, incluidos Grammys, y siguen siendo
+            una de las bandas más originales y multifacéticas en la música popular actual. Su habilidad para fusionar géneros y tratar temas profundos ha asegurado su posición como una banda icónica en el panorama 
+            alternativo moderno.
+        </p>
+    </div>
+
+    <hr />
+    
+    <h2 id="Gallery">Gallery Section</h2>
+    <div class="gallery">
+        <img src="clancy.jpg" alt="image">
+        <img src="stressed.jpg" alt="image">
+        <img src="colores.jpg" alt="image">
+        <img src="beisbol.jpg" alt="image">
+        <img src="scaled" alt="image">
+        <img src="trench.avif" alt="image">
+        <img src="viejitos.webp" alt="image">
+        <img src="cancer.jpg" alt="image">
+        <img src="radio.jpg" alt="image">
+    </div>
+    
+    <hr>
+    
+    <div class="audio-container">
+        <h2>thanks for watching</h2>
+        <audio controls>
+            <source src="hasta-la-proxima.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <footer>
+        &copy; 2024 CHOMSKY. All rights reserved.
+    </footer>
+</body>
+</html>
